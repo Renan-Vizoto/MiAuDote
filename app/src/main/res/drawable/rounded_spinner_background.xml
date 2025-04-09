@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background arredondado branco com borda cinza -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/border_gray" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Mantenha a setinha padrão do Spinner -->
+    <item android:right="8dp" android:gravity="end|center_vertical">
+        <bitmap
+            android:src="@android:drawable/arrow_down_float"
+            android:tileMode="disabled" />
+    </item>
+</layer-list>

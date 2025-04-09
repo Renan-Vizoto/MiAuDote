@@ -3,19 +3,32 @@
 
     <!-- Estilo para os EditText (Inputs) -->
     <style name="RoundedEditText" parent="Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/rounded_edittext</item>
-        <item name="android:padding">12dp</item>
-        <item name="android:textColor">@android:color/black</item>
-        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:background">@drawable/rounded_edittext_background</item>
+        <item name="android:textColor">@color/darker_gray</item>
+        <item name="android:textColorHint">@color/darker_gray</item>
         <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="RoundedSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/rounded_spinner_background</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/darker_gray</item>
     </style>
 
     <!-- Estilo para os Botões -->
     <style name="LoginButton" parent="Widget.AppCompat.Button">
-        <item name="android:backgroundTint">#7CE3EC</item>
+        <item name="android:backgroundTint">@color/aqua_button</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">20sp</item>
+
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">10.5</item>
     </style>
+
+
 </resources>

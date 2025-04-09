@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Cadastre-se clicado", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, CadastroUserActivity.class);
+                startActivity(intent);
             }
         });
     }
