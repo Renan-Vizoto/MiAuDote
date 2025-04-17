@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bege">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header com botão de voltar e logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/aqua_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="12dp">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Voltar"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <!-- Espaço flexível -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="57dp"
+                android:layout_height="69dp"
+                android:elevation="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/backgroundlogin" />
+
+        </LinearLayout>
+
+        <!-- Imagem principal do animal -->
+        <ImageView
+            android:id="@+id/imageAnimalDetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:padding="16dp"/>
+
+        <!-- Nome do animal -->
+        <TextView
+            android:id="@+id/textNomeAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:text="Nome"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Tipo e Gênero -->
+
+        <!-- Título da descrição -->
+
+        <!-- Texto da descrição -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/textTipoAnimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/badge_background"
+                android:padding="8dp"
+                android:text="Cachorro"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textGeneroAnimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge_background"
+                android:padding="8dp"
+                android:text="Macho"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Sobre o pet"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="8dp" />
+
+        <!-- Botão de Adotar -->
+        <Button
+            android:id="@+id/buttonAdotar"
+            android:layout_width="234dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/aqua_button"
+            android:gravity="center"
+            android:text="Adotar"
+            android:textColor="#2C2C2C"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
